@@ -1,0 +1,120 @@
+/*
+ * Praktikum:           P1P 
+ * Semester:            WS09
+ * Team-Name:           S3T4
+ * Namen:               Dolberg, Konstantin     #1959949
+ *                      Eisenbraun, Alexander   #1965085
+ * Aufgaben-Nr.:        A07
+ * Kontrolleur:     
+ * Datum der Abnahme:   01.12.2009
+ * Quellen:             URL: https://pub.informatik.haw-hamburg.de/home/pub/prof/schafers/S09W_P1/Aufgabenzettel_Nr3_v05.pdf
+ */
+package a07;
+
+import java.util.Arrays;
+
+public class Cuboid implements Field {
+    Point[] p;
+    double breite =0;
+    double länge =0;
+    double höhe =0;
+    boolean cuboid = false;
+    
+    public Cuboid(Point[] p) {
+        this.p = p;
+        check();
+    }
+    
+    public boolean check() {
+        double result = 0;
+        double[] entfernung = new double[8];
+        double[] entfernung2 = new double[8];
+        int counter = 0;
+        for (int j = 1; j < p.length; j++) {
+            entfernung[j] = Math.sqrt((Math.pow((p[0].getX() - p[j].getX()), 2) 
+                    + (Math.pow((p[0].getY() - p[j].getY()), 2) + (Math.pow((p[0].getZ() - p[j].getZ()), 2)))));
+        }
+        for (int i = 2; i < p.length; i++) {
+            entfernung2[i] = Math.sqrt((Math.pow((p[1].getX() - p[i].getX()), 2) 
+                    + (Math.pow((p[1].getY() - p[i].getY()), 2) + (Math.pow((p[1].getZ() - p[i].getZ()), 2)))));
+        }
+        entfernung2[0] = Math.sqrt((Math.pow((p[1].getX() - p[0].getX()), 2) 
+                        + (Math.pow((p[1].getY() - p[0].getY()), 2) 
+                        + (Math.pow((p[1].getZ() - p[0].getZ()), 2)))));
+        for (int i = 0; i < entfernung.length - 1; i++) {
+            for (int j = i + 1; j < entfernung.length; j++) {
+                if (entfernung[i] < entfernung[j]) {
+                    result = entfernung[j];
+                    entfernung[j] = entfernung[i];
+                    entfernung[i] = result;
+                }
+            }
+        }
+        for (int i = 0; i < entfernung2.length - 1; i++) {
+            for (int j = i + 1; j < entfernung2.length; j++) {
+                if (entfernung2[i] - entfernung2[j]== 1.110*(Math.pow(10, -16))) {
+                    result = entfernung2[j];
+                    entfernung2[j] = entfernung2[i];
+                    entfernung2[i] = result;
+                }
+            }
+        }
+        for (int i = 0; i < 8; i++) {
+            if (entfernung[i] == entfernung2[i]) {
+                counter++;                
+            }
+        }   
+        if(entfernung[6] == entfernung[5] && entfernung[5] == entfernung[4]){
+            breite = entfernung[6];
+            länge  = entfernung[6];
+            höhe   = entfernung[6];
+        } else {
+            breite = entfernung[3];
+            länge  = entfernung[5];
+            höhe   = entfernung[6];  
+        }
+        cuboid = counter >= 7 ? true : false;
+        return cuboid ? true : false;
+    }
+
+    public double getBreite() {
+        return breite;
+    }
+
+    public double getHöhe() {
+        return höhe;
+    }
+
+    public double getLänge() {
+        return länge;
+    }
+
+    public Point getCenter() {
+        Point xyz = new Point(0, 0, 0);
+        double resultXsumme = 0;
+        double resultYsumme = 0;
+        double resultZsumme = 0;
+        for (int i = 0; i < p.length; i++) {
+            resultXsumme += p[i].getX();
+            resultYsumme += p[i].getY();
+            resultZsumme += p[i].getZ();
+        }
+        xyz.setX(resultXsumme / 8);
+        xyz.setY(resultYsumme / 8);
+        xyz.setZ(resultZsumme / 8);
+        return xyz;
+    }
+
+    public double getSurface() {
+        return 2 * (getHöhe() * getBreite() + getHöhe() * getLänge() + getBreite() * getLänge());
+    }
+
+    public double getVolume() {
+        return (getHöhe() * getBreite() * getLänge());
+    }
+
+    public String toString() {
+        return cuboid ? String.format("Cuboid: \nPoints %s \nCenter: %s \nOberfläche: %s \nVolumen: %s", Arrays.toString(p), getCenter(), getSurface(), getVolume())
+                : "kein Quader";
+    }
+}

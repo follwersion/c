@@ -1,0 +1,256 @@
+/*
+ * Praktikum:           P1P 
+ * Semester:            WS09
+ * Team-Name:           S3T4
+ * Namen:               Dolberg, Konstantin     #1959949
+ *                      Eisenbraun, Alexander   #1965085
+ * Aufgaben-Nr.:        A06
+ * Kontrolleur:     
+ * Datum der Abnahme:   19.11.2009
+ * Quellen:             URL: https://pub.informatik.haw-hamburg.de/home/pub/prof/schafers/S09W_P1/Aufgabenzettel_Nr3_v05.pdf
+ */
+package a06;
+
+import static cards.Card.Constant.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import cards.Card;
+import cards.Card.Rank;
+import cards.Card.Suit;
+
+public class ControlPoker {
+    // 
+    public ControlPoker() {
+    }
+
+    public ControlPoker(ArrayList<Card> hand) {
+        strasse(hand);
+        flush(hand);
+        fourOfAKind(auswerten(hand));
+        fullHouse(auswerten(hand));
+        treeOfAKindAndLess(auswerten(hand));
+    }
+
+    boolean[] bestHand = new boolean[10];
+
+    public String bestHand(ArrayList<Card> hand) {
+        if (bestHand[9])
+            return String.format("%s %s", "Royal Flush", flush(hand));
+        if (bestHand[8])
+            return String.format("%s %s", "Straight Flush", flush(hand));
+        if (bestHand[2])
+            return String.format("%s %s", "Four of a kind",
+                    fourOfAKind(auswerten(hand)));
+        if (bestHand[3])
+            return String.format("%s %s", "Full House",
+                    fullHouse(auswerten(hand)));
+        if (bestHand[0] && !bestHand[1])
+            return String.format("%s %s", "Flush", flush(hand));
+        if ((bestHand[1] || bestHand[7]) && !bestHand[0])
+            return String.format("%s %s", "Straight", strasse(hand));
+        if (bestHand[4] && !bestHand[1] && !bestHand[0] && !bestHand[3])
+            return String.format("%s %s", "Three of a kind",
+                    treeOfAKindAndLess(auswerten(hand)));
+        if (bestHand[5] && !bestHand[1] && !bestHand[0] && !bestHand[3])
+            return String.format("%s %s", "Two Pair",
+                    treeOfAKindAndLess(auswerten(hand)));
+        if (bestHand[6] && !bestHand[1] && !bestHand[0] && !bestHand[3])
+            return String.format("%s %s", "One Pair",
+                    treeOfAKindAndLess(auswerten(hand)));
+        else
+            return String.format("%s %s", "High Card",
+                    treeOfAKindAndLess(auswerten(hand)));
+    }
+
+    // Zufallsdeck sortieren
+    public ArrayList<Card> sortArray(Card[] karte) {
+        ArrayList<Card> sorted = new ArrayList<Card>();
+        for (int i = 0; i < karte.length; i++) {
+            sorted.add(karte[i]);
+        }
+        Collections.sort(sorted, new Comparator<Card>() {
+            public int compare(Card o1, Card o2) {
+                return o1.compareTo(o2) * -1;
+            }
+        });
+        return sorted;
+    }
+
+    // Array "karte" auf Einlinge, Zwillinge, Drillinge, Vierlinge auswerten -->
+    public ArrayList<ArrayList<Card>> auswerten(ArrayList<Card> karte) {
+        ArrayList<ArrayList<Card>> g = new ArrayList<ArrayList<Card>>();
+        ArrayList<Card> vier = new ArrayList<Card>();
+        ArrayList<Card> drei = new ArrayList<Card>();
+        ArrayList<Card> zwei = new ArrayList<Card>();
+        ArrayList<Card> ein = new ArrayList<Card>();
+        int i = 0;
+        while (i < karte.size()) {
+            if (i < karte.size() - 3 && check(karte, i, 4)) {
+                for (int j = 0; j < 4; j++) {
+                    vier.add(karte.get(i++));
+                }
+            } else if (i < karte.size() - 2 && check(karte, i, 3)) {
+                for (int j = 0; j < 3; j++) {
+                    drei.add(karte.get(i++));
+                }
+            } else if (i < karte.size() - 1 && check(karte, i, 2)) {
+                for (int j = 0; j < 2; j++) {
+                    zwei.add(karte.get(i++));
+                }
+            } else {
+                ein.add(karte.get(i++));
+            }
+        }
+        g.add(vier);
+        g.add(drei);
+        g.add(zwei);
+        g.add(ein);
+        return g;
+    }
+
+    // ersetzt die doppelten code
+    private boolean check(ArrayList<Card> karte, int i, int n) {
+        for (int j = 1; j < n; j++) {
+            if (!(karte.get(i).getRank().value() == karte.get(i + j).getRank()
+                    .value())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    // Farben sortieren und ausgeben
+    public ArrayList<Card> suite(ArrayList<Card> karte, Suit tmp) {
+        int flushCounter = 0;
+        ArrayList<Card> flush = new ArrayList<Card>();
+        for (int i = 0; i < karte.size(); i++) {
+            if (karte.get(i).getSuit() == tmp) {
+                flushCounter++;
+                flush.add(karte.get(i));
+            }
+        }
+        return flush.size() >= 5 ? flush : null;
+    }
+
+    // aufruf methode suite mit den 4 suits
+    public ArrayList<Card> flush(ArrayList<Card> hand) {
+        ArrayList<Card> flush = new ArrayList<Card>();
+        flush = suite(hand, CLUB) == null ? flush : suite(hand, CLUB);
+        flush = suite(hand, SPADES) == null ? flush : suite(hand, SPADES);
+        flush = suite(hand, HEART) == null ? flush : suite(hand, HEART);
+        flush = suite(hand, DIAMOND) == null ? flush : suite(hand, DIAMOND);
+        bestHand[0] = (flush.size() == 0) ? false : true;
+        if (bestHand[0] && (strasse(flush) != null)) {
+            flush = strasse(flush);
+            bestHand[8] = (flush.size() == 0) ? false : true;// straight flush
+        }
+        if (bestHand[8] && !bestHand[7] && flush.get(0).getRank().equals(Rank.ACE)) {
+            bestHand[9] = true;
+        }
+        return flush;
+    }
+
+    public ArrayList<Card> strasse(ArrayList<Card> k) {
+        ArrayList<Card> strasse = new ArrayList<Card>();
+        strasse.add(k.get(0));
+        for (int i = 0; i < k.size() - 1; i++) {
+            if (!k.get(i).getRank().equals(k.get(i + 1).getRank()))
+                strasse.add(k.get(i + 1));
+        }
+        for (int i = 0; i < strasse.size() - 4; i++) {
+            // first minus last = 4, von i bis i +5 sublist return
+            if (strasse.get(i).getRank().value() - strasse.get(i + 4).getRank().value() == 4) {
+                bestHand[1] = true;
+                return new ArrayList<Card>(strasse.subList(i, i + 5));
+                // ass minus 5 = 9!
+            } else if (strasse.get(0).getRank().value() - strasse.get(strasse.size() - 4).getRank().value() == 9) {
+                ArrayList<Card> tmp = new ArrayList<Card>();
+                tmp.addAll(strasse.subList(strasse.size() - 4, strasse.size()));
+                tmp.add(strasse.get(0));
+                bestHand[1] = true;
+                bestHand[7] = true;
+                return tmp;
+            }
+        }
+        return null;
+    }
+
+    public ArrayList<Card> fourOfAKind(ArrayList<ArrayList<Card>> karte) {
+        ArrayList<Card> four = new ArrayList<Card>();
+        if (!karte.get(0).isEmpty()) {
+            for (int i = 0; i < 4; i++) {
+                four.add(karte.get(0).get(i));
+            }
+            bestHand[2] = true;
+            if (!karte.get(1).isEmpty()) {
+                four.add(karte.get(1).get(0));
+            } else if (!karte.get(2).isEmpty()) {
+                four.add(karte.get(2).get(0));
+            } else {
+                four.add(karte.get(3).get(0));
+            }
+        }
+        return four;
+    }
+
+    public ArrayList<Card> fullHouse(ArrayList<ArrayList<Card>> karte) {
+        ArrayList<Card> full = new ArrayList<Card>();
+        if (karte.get(0).isEmpty() && !karte.get(1).isEmpty()
+                && !karte.get(2).isEmpty()) {
+            full.addAll(adding(karte, 1, 0, 3));
+            full.addAll(adding(karte, 2, 0, 2));
+            bestHand[3] = true;
+        }
+        if (karte.get(0).isEmpty() && (karte.get(1).size() == 6)) {
+            full.addAll(adding(karte, 1, 0, 5));
+            bestHand[3] = true;
+        }
+        return full;
+    }
+
+    public ArrayList<Card> treeOfAKindAndLess(ArrayList<ArrayList<Card>> karte) {
+        ArrayList<Card> three = new ArrayList<Card>();
+        if (!bestHand[3] && !bestHand[2]) {
+            if (karte.get(0).isEmpty() && !karte.get(1).isEmpty()
+                    && karte.get(2).isEmpty()) {
+                three.addAll(adding(karte, 1, 0, 3));
+                three.addAll(adding(karte, 3, 0, 2));
+                bestHand[4] = true;
+            } else if (karte.get(0).isEmpty() && karte.get(1).isEmpty()
+                    && !karte.get(2).isEmpty() && karte.get(2).size() == 4) {
+                three.addAll(adding(karte, 2, 0, 4));
+                three.addAll(adding(karte, 3, 0, 1));
+                bestHand[5] = true;
+            } else if (karte.get(2).size() == 4 && !karte.get(3).isEmpty()) {
+                three.addAll(adding(karte, 2, 0, 4));
+                three.addAll(adding(karte, 3, 0, 1));
+            } else if (karte.get(2).size() == 2 && karte.get(3).size() >= 3) {
+                three.addAll(adding(karte, 2, 0, 2));
+                three.addAll(adding(karte, 3, 0, 3));
+                bestHand[6] = true;
+            } else if (karte.get(2).size() == 6) {
+                three.addAll(adding(karte, 2, 0, 4));
+                bestHand[5] = true;
+                if (karte.get(2).get(4).getRank().value() < karte.get(3).get(0)
+                        .getRank().value()) {
+                    three.addAll(adding(karte, 3, 0, 1));
+                } else {
+                    three.addAll(adding(karte, 2, 4, 5));
+                }
+            } else {
+                three.addAll(adding(karte, 3, 0, 5));
+            }
+        }
+        return three;
+    }
+
+    private ArrayList<Card> adding(ArrayList<ArrayList<Card>> hand, int a,
+            int b, int c) {
+        ArrayList<Card> tmp = new ArrayList<Card>();
+        for (; b < c; b++) {
+            tmp.add(hand.get(a).get(b));
+        }
+        return tmp;
+    }
+}

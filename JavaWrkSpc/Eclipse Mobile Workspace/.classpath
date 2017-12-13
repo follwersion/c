@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="ti1prp/" kind="src" path="ADP/src"/>
+	<classpathentry kind="src" path="ADP/src/ti1prp"/>
+	<classpathentry kind="src" path="BTI_PRP_11/src"/>
+	<classpathentry excluding="code/" kind="src" path="BTI1_PRP_1_WS09_10/src"/>
+	<classpathentry kind="src" path="BTI1_PRP_1_WS09_10/src/code"/>
+	<classpathentry kind="src" path="Head to Toe/src"/>
+	<classpathentry kind="src" path="Java VK/src"/>
+	<classpathentry kind="src" path="Lab_Exam#001_V02/src"/>
+	<classpathentry kind="src" path="Lab_Exam#001/src"/>
+	<classpathentry kind="src" path="Lab_Exam#002_v02/Lab_Exam#003_V02/src"/>
+	<classpathentry kind="src" path="Lab_Exam#002_v02/src"/>
+	<classpathentry kind="src" path="Lab_Exam#002/src"/>
+	<classpathentry kind="src" path="Lab_Exam#003/src"/>
+	<classpathentry kind="src" path="Lab_Exam#004/src"/>
+	<classpathentry kind="src" path="PACKAGE_ARSCH/src"/>
+	<classpathentry kind="src" path="PACKAGE_TEST/src"/>
+	<classpathentry kind="src" path="ProbePrüfung/src"/>
+	<classpathentry kind="src" path="Stopp_1_35min_FAIL/src"/>
+	<classpathentry kind="src" path="Stopp_2_22min_FAIL/src"/>
+	<classpathentry kind="src" path="Stopp_3_19min_PASSED/src"/>
+	<classpathentry kind="src" path="Tut/src"/>
+	<classpathentry kind="src" path="Zeuch/src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/Übungen"/>
+	<classpathentry kind="output" path="Zeuch/bin"/>
+</classpath>

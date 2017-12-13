@@ -1,0 +1,60 @@
+/*
+ * Praktikum:           P1P 
+ * Semester:            WS09
+ * Team-Name:           S3T4
+ * Namen:               Dolberg, Konstantin     #1959949
+ *                      Eisenbraun, Alexander   #1965085
+ * Aufgaben-Nr.:        A07
+ * Kontrolleur:     
+ * Datum der Abnahme:   01.12.2009
+ * Quellen:             URL: https://pub.informatik.haw-hamburg.de/home/pub/prof/schafers/S09W_P1/Aufgabenzettel_Nr3_v05.pdf
+ */
+package a07;
+
+import java.util.Arrays;
+
+public class Cube extends Cuboid {
+    
+	public Cube(Point[] p) {	   
+	    super(p);
+	}
+	
+	public boolean check() { 
+	   if(super.check()){
+	   boolean würfel=false;	   
+	   double result = 0;
+	   double result2 = 0;
+	   int counterGleicheKanten = 0;
+	   	double[] results = new double[8]; 
+		for (int j = 1; j < p.length; j++) {
+			result = Math.sqrt((Math.pow((p[0].getX() - p[j].getX()) ,2))
+					+ (Math.pow((p[0].getY() - p[j].getY()),2)
+					+ (Math.pow((p[0].getZ() - p[j].getZ()),2))));
+			results[j] = result;
+		}
+		for (int i = 0; i < results.length - 1; i++) {
+			for (int j = i + 1; j < results.length; j++) {
+				if (results[i] < results[j]) {
+					result2 = results[j];
+					results[j] = results[i];
+					results[i] = result2;
+				}
+			}
+		}
+		for (int j = 0; j < results.length; j++) {
+			if (results[6] == results[j]) {
+				counterGleicheKanten++;				
+			}
+		}		
+		würfel=counterGleicheKanten==3? true : false;
+		return würfel;
+		} else {
+	    return false;
+	   }	   
+	}
+	
+    public String toString() {      
+        return  check() ? String.format( "Cube: \nPoints %s \nCenter: %s \nOberfläche: %s \nVolumen: %s",Arrays.toString(p), super.getCenter(),
+                        super.getSurface(), super.getVolume()):"Kein Würfel";
+    }
+}

@@ -1,0 +1,14 @@
+package Skript5;
+
+public class String {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		System.out.println("Hallo Welt");
+
+	}
+
+}

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="aufgabe7ClassDiagram" foregroundRGB="255,255,255" id="{UMLID=_n5jqwKPWEdyVDIJdbZWxCQ,JavaID=aufgabe7}" metadata="uml2-1.0" initialized="true" scrolledY="384" tag="1000" key="3230303730363239207469317072702F6272756E735F66">
+  <children xsi:type="editmodel:EnumerationEditModel" name="VehicleSubType" location="970,50" size="144,195" id="{UMLID=_WPuGwK7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType}" runTimeClassModel="Bus%,LKW%,Dreirad%,Motorrad%,Fahrrad%,All%,Roller%,PKW%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="72,144">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="All" id="{UMLID=_wHadgK7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType#All%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Bus" id="{UMLID=_pabBE67NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType#Bus%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Dreirad" id="{UMLID=_pabBEK7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType#Dreirad%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Fahrrad" id="{UMLID=_pabBEa7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType#Fahrrad%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="LKW" id="{UMLID=_pabBFa7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType#LKW%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Motorrad" id="{UMLID=_pabBFK7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType#Motorrad%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="PKW" id="{UMLID=_pabBFq7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType#PKW%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Roller" id="{UMLID=_pabBEq7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType#Roller%}"/>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" enumerationClassMode="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" ShowInnerEntity="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" name="VehicleType" location="830,50" size="119,105" id="{UMLID=_WXPrFK7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleType}" runTimeClassModel="Velo%,KFZ%,All%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="51,54">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="All" id="{UMLID=_w6GesK7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleType#All%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="KFZ" id="{UMLID=_p0u-gK7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleType#KFZ%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Velo" id="{UMLID=_p0u-ga7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleType#Velo%}"/>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" enumerationClassMode="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" name="Color" location="1140,50" size="101,213" id="{UMLID=_oYsd0qPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color}" runTimeClassModel="brown%,white%,green%,blue%,red%,All%,black%,yellow%,orange%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="63,162">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="orange" id="{UMLID=_ob-bUKPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color#orange%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="blue" id="{UMLID=_ob-bUqPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color#blue%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="green" id="{UMLID=_ob-bU6PWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color#green%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="black" id="{UMLID=_ob-bV6PWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color#black%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="yellow" id="{UMLID=_ob-bVqPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color#yellow%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="white" id="{UMLID=_ob-bVKPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color#white%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="brown" id="{UMLID=_ob-bVaPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color#brown%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="red" id="{UMLID=_ob-bUaPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Color#red%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="All" id="{UMLID=_NpJdEK7OEdy2XumkZG0mdw,JavaID=aufgabe7/Color#All%}"/>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" enumerationClassMode="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" name="Fuel" location="1260,50" size="109,195" id="{UMLID=_oW6VIKPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Fuel}" runTimeClassModel="Elektro%,Benzin%,Kernenergie%,Diesel%,All%,Biodiesel%,Super%,Erdgas%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="88,144">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Diesel" id="{UMLID=_oXgLAqPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Fuel#Diesel%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="All" id="{UMLID=_OYkH0K7OEdy2XumkZG0mdw,JavaID=aufgabe7/Fuel#All%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Biodiesel" id="{UMLID=_oXgLAaPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Fuel#Biodiesel%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Elektro" id="{UMLID=_U60JUK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Fuel#Elektro%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Super" id="{UMLID=_oXp8AKPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Fuel#Super%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Kernenergie" id="{UMLID=_oXgLA6PWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Fuel#Kernenergie%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Erdgas" id="{UMLID=_oXgLAKPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Fuel#Erdgas%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Benzin" id="{UMLID=_oXgLBKPWEdyVDIJdbZWxCQ,JavaID=aufgabe7/Fuel#Benzin%}"/>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" enumerationClassMode="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:EnumerationEditModel" name="BusType" location="832,170" size="116,141" id="{UMLID=_WO_G8K7NEdy2XumkZG0mdw,JavaID=aufgabe7/BusType}" runTimeClassModel="Doppeldecker%,Gelenk%,Panorama%,All%,Normal%">
+    <children xsi:type="editmodel:CompartmentEditModel" size="95,90">
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Gelenk" id="{UMLID=_aZsXYa7OEdy2XumkZG0mdw,JavaID=aufgabe7/BusType#Gelenk%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Doppeldecker" id="{UMLID=_aZsXY67OEdy2XumkZG0mdw,JavaID=aufgabe7/BusType#Doppeldecker%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Normal" id="{UMLID=_aZsXYK7OEdy2XumkZG0mdw,JavaID=aufgabe7/BusType#Normal%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="All" id="{UMLID=_a01bQK7OEdy2XumkZG0mdw,JavaID=aufgabe7/BusType#All%}"/>
+      <children xsi:type="editmodel:EnumerationLiteralEditModel" name="Panorama" id="{UMLID=_aZsXYq7OEdy2XumkZG0mdw,JavaID=aufgabe7/BusType#Panorama%}"/>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" enumerationClassMode="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="CarPark" location="50,52" size="109,209" id="{UMLID=_r26sIK7iEdy2XumkZG0mdw,JavaID=aufgabe7/CarPark}" runTimeClassModel="main([Ljava.lang.String;),verfügbar(Laufgabe7.VehicleType;),available(Laufgabe7.VehicleSubType;Laufgabe7.Color;),available(Laufgabe7.VehicleType;Laufgabe7.Color;),verfügbar(Laufgabe7.VehicleSubType;II),vehicle,available(),available(Laufgabe7.VehicleSubType;I),available(Laufgabe7.VehicleSubType;Laufgabe7.BusType;),available(Laufgabe7.VehicleType;Laufgabe7.Fuel;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="88,162"/>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Truck" location="49,622" size="98,101" id="{UMLID=_rsouwq7iEdy2XumkZG0mdw,JavaID=aufgabe7/Truck}" runTimeClassModel="load,Truck(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;I),toString(),costs()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="49,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Truck" id="{UMLID=_rveAVK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Truck#Truck(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;I)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="costs" id="{UMLID=_rveAUa7iEdy2XumkZG0mdw,JavaID=aufgabe7/Truck#costs()}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_rveAXa7iEdy2XumkZG0mdw,JavaID=aufgabe7/Truck#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" autoLocated="true" id="{UMLID=_rvU2Yq7iEdy2XumkZG0mdw,JavaID=aufgabe7/Kfz&lt;-aufgabe7/Truck}" source="//@children.6" target="//@children.11/@sourceConnections.0" targetEnd="//@children.6/@sourceConnections.0/@children.1" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Car" location="305,622" size="98,101" id="{UMLID=_rsouwK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Car}" runTimeClassModel="Car(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;II),speed,seats,costs(),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="59,36"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Car" id="{UMLID=_rs8QwK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Car#Car(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;II)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="costs" id="{UMLID=_rs8Qzq7iEdy2XumkZG0mdw,JavaID=aufgabe7/Car#costs()}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_rs8Qy67iEdy2XumkZG0mdw,JavaID=aufgabe7/Car#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" autoLocated="true" id="{UMLID=_rsouxK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Kfz&lt;-aufgabe7/Car}" source="//@children.7" target="//@children.11/@sourceConnections.0" targetEnd="//@children.7/@sourceConnections.0/@children.1" sourceEnd="//@children.7/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Moped" location="433,622" size="98,101" id="{UMLID=_rsouw67iEdy2XumkZG0mdw,JavaID=aufgabe7/Moped}" runTimeClassModel="ccm,Moped(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;I),costs(),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="49,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Moped" id="{UMLID=_rw0EI67iEdy2XumkZG0mdw,JavaID=aufgabe7/Moped#Moped(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;I)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="costs" id="{UMLID=_rw0ELK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Moped#costs()}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_rw0EIK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Moped#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" autoLocated="true" id="{UMLID=_rwqTIK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Kfz&lt;-aufgabe7/Moped}" source="//@children.8" target="//@children.11/@sourceConnections.0" targetEnd="//@children.8/@sourceConnections.0/@children.1" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Scooter" location="690,622" size="99,101" id="{UMLID=_rx2l8K7iEdy2XumkZG0mdw,JavaID=aufgabe7/Scooter}" runTimeClassModel="Scooter(Ljava.lang.String;Laufgabe7.Color;),costs(),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,54">
+      <children xsi:type="editmodel:MethodEditModel" name="Scooter" id="{UMLID=_rx2l9K7iEdy2XumkZG0mdw,JavaID=aufgabe7/Scooter#Scooter(Ljava.lang.String;Laufgabe7.Color;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="costs" id="{UMLID=_ryAW9a7iEdy2XumkZG0mdw,JavaID=aufgabe7/Scooter#costs()}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_ryAW8q7iEdy2XumkZG0mdw,JavaID=aufgabe7/Scooter#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" autoLocated="true" id="{UMLID=_rx2l867iEdy2XumkZG0mdw,JavaID=aufgabe7/Velo&lt;-aufgabe7/Scooter}" source="//@children.9" target="//@children.15/@sourceConnections.0" targetEnd="//@children.9/@sourceConnections.0/@children.1" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Bicycle" location="819,622" size="98,83" id="{UMLID=_rx2l8a7iEdy2XumkZG0mdw,JavaID=aufgabe7/Bicycle}" runTimeClassModel="Bicycle(Ljava.lang.String;Laufgabe7.Color;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Bicycle" id="{UMLID=_ryv9067iEdy2XumkZG0mdw,JavaID=aufgabe7/Bicycle#Bicycle(Ljava.lang.String;Laufgabe7.Color;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_ryv90K7iEdy2XumkZG0mdw,JavaID=aufgabe7/Bicycle#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" autoLocated="true" id="{UMLID=_rymM0a7iEdy2XumkZG0mdw,JavaID=aufgabe7/Velo&lt;-aufgabe7/Bicycle}" source="//@children.10" target="//@children.15/@sourceConnections.0" targetEnd="//@children.10/@sourceConnections.0/@children.1" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Bus" location="177,622" size="98,83" id="{UMLID=_rsouwa7iEdy2XumkZG0mdw,JavaID=aufgabe7/Bus}" runTimeClassModel="bustype,seats,toString(),Bus(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;ILaufgabe7.BusType;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="56,18"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Bus" id="{UMLID=_ruIjkq7iEdy2XumkZG0mdw,JavaID=aufgabe7/Bus#Bus(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;ILaufgabe7.BusType;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_ruIjna7iEdy2XumkZG0mdw,JavaID=aufgabe7/Bus#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.6/@sourceConnections.0 //@children.7/@sourceConnections.0 //@children.8/@sourceConnections.0" size="2,1" autoLocated="true" id="{UMLID=_rt-ykK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Kfz&lt;-aufgabe7/Bus}" source="//@children.11" target="//@children.13" targetEnd="//@children.11/@sourceConnections.0/@children.1" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,83" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.15/@sourceConnections.0" name="Velo" location="690,489" size="98,83" id="{UMLID=_rpgiQa7iEdy2XumkZG0mdw,JavaID=aufgabe7/Velo}" runTimeClassModel="Velo(Ljava.lang.String;Laufgabe7.Color;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Velo" id="{UMLID=_rsC4467iEdy2XumkZG0mdw,JavaID=aufgabe7/Velo#Velo(Ljava.lang.String;Laufgabe7.Color;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_rsC44K7iEdy2XumkZG0mdw,JavaID=aufgabe7/Velo#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" size="2,1" autoLocated="true" id="{UMLID=_rr5H4K7iEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle&lt;-aufgabe7/Velo}" source="//@children.12" target="//@children.13/@sourceConnections.0" targetEnd="//@children.12/@sourceConnections.0/@children.1" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.0" name="Kfz" location="369,489" size="98,83" id="{UMLID=_rpgiQK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Kfz}" runTimeClassModel="fuel,toString(),Kfz(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;)">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="77,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Kfz" id="{UMLID=_rq2mEq7iEdy2XumkZG0mdw,JavaID=aufgabe7/Kfz#Kfz(Ljava.lang.String;Laufgabe7.Color;Laufgabe7.Fuel;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_rq_wAa7iEdy2XumkZG0mdw,JavaID=aufgabe7/Kfz#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.12/@sourceConnections.0" size="2,1" autoLocated="true" id="{UMLID=_rq2mEK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle&lt;-aufgabe7/Kfz}" source="//@children.13" target="//@children.14" targetEnd="//@children.13/@sourceConnections.0/@children.1" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="62,404" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.0" name="Vehicle" location="516,35" size="125,404" id="{UMLID=_WXF6EK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle}" runTimeClassModel="rentStart(),serviceStart(),counter,defect,repair(),available,type,costs,paint(Laufgabe7.Color;),toString(),Vehicle(Ljava.lang.String;Laufgabe7.Color;),id,serviceFinish(I),color,subtype,name,service,rentFinish(),rename(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="71,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="available" id="{UMLID=_W8r6dq7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#available}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="color" id="{UMLID=_W8r6cK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Color@color+aufgabe7/Vehicle@ownedEnd|aufgabe7/Color#color}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="costs" id="{UMLID=_W8r6eK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#costs}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="counter" id="{UMLID=_W8r6ca7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#counter}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="defect" id="{UMLID=_W8r6c67NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#defect}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="{UMLID=_W8iJcK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#id}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="name" id="{UMLID=_W8r6dK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#name}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="service" id="{UMLID=_W8r6da7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#service}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="subtype" id="{UMLID=_W8r6cq7NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleSubType@subtype+aufgabe7/Vehicle@ownedEnd|aufgabe7/VehicleSubType#subtype}"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="type" id="{UMLID=_W8r6d67NEdy2XumkZG0mdw,JavaID=aufgabe7/VehicleType@type+aufgabe7/Vehicle@ownedEnd|aufgabe7/VehicleType#type}"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="104,162">
+      <children xsi:type="editmodel:MethodEditModel" name="Vehicle" id="{UMLID=_W81EYq7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#Vehicle(Ljava.lang.String;Laufgabe7.Color;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="paint" id="{UMLID=_W8r6fa7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#paint(Laufgabe7.Color;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rename" id="{UMLID=_W8r6hK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#rename(Ljava.lang.String;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rentFinish" id="{UMLID=_W81EYK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#rentFinish()}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="rentStart" id="{UMLID=_W8r6gK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#rentStart()}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="repair" id="{UMLID=_W81EYa7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#repair()}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="serviceFinish" id="{UMLID=_W8r6ga7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#serviceFinish(I)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="serviceStart" id="{UMLID=_W8r6fK7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#serviceStart()}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_W8r6ea7NEdy2XumkZG0mdw,JavaID=aufgabe7/Vehicle#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" showAttributes="true" showLiterals="true" Minimize="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Tricycle" location="561,622" size="99,83" id="{UMLID=_rx2l8q7iEdy2XumkZG0mdw,JavaID=aufgabe7/Tricycle}" runTimeClassModel="Tricycle(Ljava.lang.String;Laufgabe7.Color;),toString()">
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="78,36">
+      <children xsi:type="editmodel:MethodEditModel" name="Tricycle" id="{UMLID=_rzpVtK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Tricycle#Tricycle(Ljava.lang.String;Laufgabe7.Color;)}" isAssociationMemeber="true"/>
+      <children xsi:type="editmodel:MethodEditModel" name="toString" id="{UMLID=_rzpVsa7iEdy2XumkZG0mdw,JavaID=aufgabe7/Tricycle#toString()}" isAssociationMemeber="true"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <sourceConnections xsi:type="editmodel:GeneralizationEditModel" targetConnections="//@children.9/@sourceConnections.0 //@children.10/@sourceConnections.0" size="2,1" autoLocated="true" id="{UMLID=_rzpVsK7iEdy2XumkZG0mdw,JavaID=aufgabe7/Velo&lt;-aufgabe7/Tricycle}" source="//@children.15" target="//@children.12" targetEnd="//@children.15/@sourceConnections.0/@children.1" sourceEnd="//@children.15/@sourceConnections.0/@children.0" connectionRouterKind="GeneralizationManhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,0" anchorKind="FixedAtEdge" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="49,83" anchorKind="FixedAtEdge"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showMethods="true" Minimize="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=1" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="10,10" gridOrigin="0,0" rulerUnit="pixel">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" innerClassSorter="Natural" showPrivateAttributes="true" showProtectedAttributes="true" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showProtectedMethods="true" showPublicMethods="true" showPackageMethods="true" showPrivateMethods="true" showStaticMethods="true" showProtectedInnerClasses="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showPrivateInnerClasses="true" showStaticInnerClasses="true" showInterfaceStereotype="true" showMethods="true" showAttributes="true" showLiterlas="true" showInnerEntity="true"/>
+</editmodel:ClassDiagramEditModel>

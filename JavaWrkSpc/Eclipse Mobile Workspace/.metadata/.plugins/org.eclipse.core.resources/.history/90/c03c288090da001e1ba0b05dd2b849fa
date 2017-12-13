@@ -1,0 +1,57 @@
+package a07;
+
+public class A7 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		double radius = 6; 
+		Point unserTestSphere = new Point(1,1,1);
+	
+		Sphere p = new Sphere(radius,unserTestSphere);
+		
+		System.out.println(p+"\n");
+		Point [] unserTestCube = new Point[8];
+		unserTestCube[0] = new Point (-1.0, 1.0, 1.0 );
+		unserTestCube[1] = new Point( -1.0, 3.0, 1.0 );
+		unserTestCube[2] = new Point( -1.0, 1.0, 3.0 );
+		unserTestCube[3] = new Point( -1.0, 3.0, 3.0 ); 
+		unserTestCube[4] = new Point( -3.0, 1.0, 1.0 );
+		unserTestCube[5] = new Point( -3.0, 3.0, 1.0 ); 
+		unserTestCube[6] = new Point( -3.0, 1.0, 3.0 ); 
+		unserTestCube[7] = new Point( -3.0, 3.0, 3.0 );
+		
+		Point [] unserTestCube2 = new Point[8];
+		unserTestCube2[0] = new Point (6.7, 3.9, 1.3 );
+		unserTestCube2[1] = new Point( -8.3, 4.9, 5.3 );
+		unserTestCube2[2] = new Point( -6.3, -1.1, 14.3 );
+		unserTestCube2[3] = new Point( 2.7, 4.9, 16.3 ); 
+		unserTestCube2[4] = new Point( -0.3, -8.1, 8.3 );
+		unserTestCube2[5] = new Point( 0.7, 10.9, 7.3 ); 
+		unserTestCube2[6] = new Point( -2.3, -2.1, -0.7 ); 
+		unserTestCube2[7] = new Point( 8.7, -2.1, 10.3 );
+		
+		Cube b = new Cube(unserTestCube2); 
+		System.out.println(b+"\n");
+		Cube c = new Cube(unserTestCube); 
+		System.out.println(c+"\n");
+		
+		Point[] cuboidpoints = new Point[8];
+        cuboidpoints[0] = new Point(1, 0, 1);
+        cuboidpoints[1] = new Point(4, 0, 1);
+        cuboidpoints[2] = new Point(4, 0, 3);
+        cuboidpoints[3] = new Point(1, 0, 3);
+        cuboidpoints[4] = new Point(1, 2, 1);
+        cuboidpoints[5] = new Point(4, 2, 1);
+        cuboidpoints[6] = new Point(4, 2, 3);
+        cuboidpoints[7] = new Point(1, 2, 3);
+      
+		Cuboid q = new Cuboid(cuboidpoints);
+		System.out.println(q+"\n");
+	
+		
+		
+	}
+
+}

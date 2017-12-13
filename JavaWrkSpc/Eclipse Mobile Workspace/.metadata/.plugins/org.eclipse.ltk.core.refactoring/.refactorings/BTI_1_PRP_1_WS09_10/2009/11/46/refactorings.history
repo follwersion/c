@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;counterStaight&apos; in &apos;a06.A06.flush(...)&apos; to &apos;counterStraight&apos;&#x0D;&#x0A;- Original project: &apos;BTI_1_PRP_1_WS09_10&apos;&#x0D;&#x0A;- Original element: &apos;a06.A06.flush(ArrayList&lt;Card&gt;).counterStaight&apos;&#x0D;&#x0A;- Renamed element: &apos;counterStaight&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;counterStaight&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;a06{A06.java[A06~flush~QArrayList\&lt;QCard;&gt;;@counterStaight!2080!2102!2084!2097!I" name="counterStraight" references="true" stamp="1257779753031" version="1.0"/>
+</session>
