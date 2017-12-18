@@ -1,8 +1,0 @@
-package a07;
-
-public  interface Field {
-	
-	public abstract double getSurface();	
-	public abstract double getVolume() ;		
-	public abstract Point getCenter() ;	
-}

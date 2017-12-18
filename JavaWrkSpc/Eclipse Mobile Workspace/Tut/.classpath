@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<classpath>
-	<classpathentry excluding="ti1prp/aufgabe01/|ti1prp/aufgabe02/|ti1prp/aufgabe03/|ti1prp/aufgabe04/|ti1prp/aufgabe05/|ti1prp/aufgabe06/|ti1prp/aufgabe07/|ti1prp/aufgabe08/|ti1prp/aufgabe09/|ti1prp/aufgabe10/|ti1prp/cards/" kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="output" path="bin"/>
-</classpath>

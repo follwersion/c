@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+"D:/Dropbox/Studium/BA/atWork/SW/GIT_Server_windows_amd64_mws/gogs/gogs.exe" hook --config='D:/Dropbox/Studium/BA/atWork/SW/GIT_Server_windows_amd64_mws/gogs/custom/conf/app.ini' pre-receive
